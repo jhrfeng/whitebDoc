@@ -1,6 +1,6 @@
 package com.jing.maven.account.model;
 
-public class ThridAccountVo {
+public class OtherAccountVo {
 	
 	/**
 	 * type 1为QQ第三方登录； 2为微信第三方登录；
@@ -10,22 +10,13 @@ public class ThridAccountVo {
 	/**
 	 * QQ第三方主键
 	 */
-	private String openId;
+	private String appId;
 	
 	/**
 	 * QQ第三方密钥
 	 */
-	private String accessToken;
+	private String appToken;
 	
-	/**
-	 * 微信第三方登录主键
-	 */
-	private String appId;
-	
-	/**
-	 * 微信第三方密钥
-	 */
-	private String secret;
 	
 	/**
 	 * 昵称
@@ -47,20 +38,7 @@ public class ThridAccountVo {
 	 */
 	private String birthday;
 	
-	/**
-	 * 省 无法使用，与本数据库参数表无法匹配
-	 */
-	private String province;
-
-	/**
-	 * 城市 无法使用，与本数据库参数表无法匹配
-	 */
-	private String city;
 	
-	/**
-	 * 地区 无法使用，与本数据库参数表无法匹配
-	 */
-	private String area;
 	
 	/**
 	 * mac地址
@@ -76,21 +54,7 @@ public class ThridAccountVo {
 		this.type = type;
 	}
 
-	public String getOpenId() {
-		return openId;
-	}
-
-	public void setOpenId(String openId) {
-		this.openId = openId;
-	}
-
-	public String getAccessToken() {
-		return accessToken;
-	}
-
-	public void setAccessToken(String accessToken) {
-		this.accessToken = accessToken;
-	}
+	
 
 	public String getAppId() {
 		return appId;
@@ -100,13 +64,6 @@ public class ThridAccountVo {
 		this.appId = appId;
 	}
 
-	public String getSecret() {
-		return secret;
-	}
-
-	public void setSecret(String secret) {
-		this.secret = secret;
-	}
 
 	public String getHoneyName() {
 		return honeyName;
@@ -140,36 +97,20 @@ public class ThridAccountVo {
 		this.birthday = birthday;
 	}
 
-	public String getProvince() {
-		return province;
-	}
-
-	public void setProvince(String province) {
-		this.province = province;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
-	}
-
-	public String getArea() {
-		return area;
-	}
-
-	public void setArea(String area) {
-		this.area = area;
-	}
-
 	public String getMac() {
 		return mac;
 	}
 
 	public void setMac(String mac) {
 		this.mac = mac;
+	}
+
+	public String getAppToken() {
+		return appToken;
+	}
+
+	public void setAppToken(String appToken) {
+		this.appToken = appToken;
 	}
 	
 	
