@@ -1,4 +1,4 @@
-package com.jing.maven.infomation.entity;
+package com.jing.maven.infomation.response;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -9,16 +9,19 @@ import com.jing.maven.manager.entity.IdEntity;
 
 
 /**
- * 个人信息表
+ * 信息表
  * 2015-1-20 22:50:25
  * @author jinghr
  *
  */
-@Entity
-@Table(name = "app_infomation")
-@JsonInclude(Include.NON_NULL)  
-public class InfomationPO  extends IdEntity {
-	private static final long serialVersionUID = 2433461464054606867L;
+public class InformationRes {
+	
+	private String className = "InfomationRes"; 
+	
+	/**
+	 * 主键
+	 */
+	private String tid;	
 	
 	/**
 	 * 昵称
@@ -76,52 +79,10 @@ public class InfomationPO  extends IdEntity {
 	private String classroom;
 	
 	/**
-	 * 记录
+	 * 签名
 	 */
-	private String remark;
-	
-	/**
-	 * 手机
-	 */
-	private String mobile;
-	
-	/**
-	 * 邮箱
-	 */
-	private String email;
-	
-	/**
-	 * QQ
-	 */
-	private String qq;
-	
-	/**
-	 * 创建时间
-	 */
-	private String createDate;
-	
-	/**
-	 * 更新时间
-	 */
-	private String updateDate;
-	
-	/**
-	 * 操作人ID
-	 */
-	private String updateId;
-	
 	private String signature;
 
-	public InfomationPO(){}
-	
-	public InfomationPO(String tid, String nickname, String sex, String province, String area){
-		this.tid = tid;
-		this.nickname = nickname;
-		this.sex = sex;
-		this.province = province;
-		this.area = area;
-		
-	}
 	
 	public String getNickname() {
 		return nickname;
@@ -203,62 +164,6 @@ public class InfomationPO  extends IdEntity {
 		this.grade = grade;
 	}
 
-	public String getRemark() {
-		return remark;
-	}
-
-	public void setRemark(String remark) {
-		this.remark = remark;
-	}
-
-	public String getMobile() {
-		return mobile;
-	}
-
-	public void setMobile(String mobile) {
-		this.mobile = mobile;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getQq() {
-		return qq;
-	}
-
-	public void setQq(String qq) {
-		this.qq = qq;
-	}
-
-	public String getCreateDate() {
-		return createDate;
-	}
-
-	public void setCreateDate(String createDate) {
-		this.createDate = createDate;
-	}
-
-	public String getUpdateDate() {
-		return updateDate;
-	}
-
-	public void setUpdateDate(String updateDate) {
-		this.updateDate = updateDate;
-	}
-
-	public String getUpdateId() {
-		return updateId;
-	}
-
-	public void setUpdateId(String updateId) {
-		this.updateId = updateId;
-	}
-
 	public String getClassroom() {
 		return classroom;
 	}
@@ -273,6 +178,22 @@ public class InfomationPO  extends IdEntity {
 
 	public void setSignature(String signature) {
 		this.signature = signature;
+	}
+
+	public String getClassName() {
+		return className;
+	}
+
+	public void setClassName(String className) {
+		this.className = className;
+	}
+
+	public String getTid() {
+		return tid;
+	}
+
+	public void setTid(String tid) {
+		this.tid = tid;
 	}
 	
 	

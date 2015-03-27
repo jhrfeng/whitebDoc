@@ -1,6 +1,8 @@
-package com.jing.maven.account.model;
+package com.jing.maven.account.request;
 
-public class OtherAccountVo {
+public class OtherAccountReq {
+	
+	private String className = "OtherAccountReq";
 	
 	/**
 	 * type 1为QQ第三方登录； 2为微信第三方登录；
@@ -37,8 +39,6 @@ public class OtherAccountVo {
 	 * 生日
 	 */
 	private String birthday;
-	
-	
 	
 	/**
 	 * mac地址
@@ -112,6 +112,15 @@ public class OtherAccountVo {
 	public void setAppToken(String appToken) {
 		this.appToken = appToken;
 	}
+
+	public String getClassName() {
+		return className;
+	}
+
+	public void setClassName(String className) {
+		this.className = className;
+	}
+	
 	
 	
 
