@@ -10,14 +10,15 @@ public class OtherAccountRes {
 	private String myinfoId;
 	
 	/**
-	 * sip账号
+	 * 环信账号
 	 */
-	private String sipAccount;
+	private String username;
 	
 	/**
-	 * sip密码
+	 * 环信token，有效期为7天
 	 */
-	private String sipPwd;
+	private String accessToken;
+
 
 	public String getMyinfoId() {
 		return myinfoId;
@@ -27,28 +28,28 @@ public class OtherAccountRes {
 		this.myinfoId = myinfoId;
 	}
 
-	public String getSipAccount() {
-		return sipAccount;
-	}
-
-	public void setSipAccount(String sipAccount) {
-		this.sipAccount = sipAccount;
-	}
-
-	public String getSipPwd() {
-		return sipPwd;
-	}
-
-	public void setSipPwd(String sipPwd) {
-		this.sipPwd = sipPwd;
-	}
-
 	public String getClassName() {
 		return className;
 	}
 
 	public void setClassName(String className) {
 		this.className = className;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getAccessToken() {
+		return accessToken;
+	}
+
+	public void setAccessToken(String accessToken) {
+		this.accessToken = accessToken;
 	}
 	
 	
