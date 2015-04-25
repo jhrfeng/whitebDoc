@@ -12,39 +12,40 @@ public class OtherAccountReq {
 	/**
 	 * QQ第三方主键
 	 */
-	private String appId;
+	private String uId;
 	
 	/**
 	 * QQ第三方密钥
 	 */
-	private String appToken;
-	
-	
-	/**
-	 * 昵称
-	 */
-	private String honeyName;
-	
-	/**
-	 * 性别
-	 */
-	private String sex;
-	
-	/**
-	 * 年龄
-	 */
-	private String age;
-
-	/**
-	 * 生日
-	 */
-	private String birthday;
+	private String accessToken;
 	
 	/**
 	 * mac地址
 	 */
 	private String mac;
 	
+/*	
+	
+	*//**
+	 * 昵称
+	 *//*
+	private String nickName;
+	
+	*//**
+	 * 性别
+	 *//*
+	private String sex;
+	
+	*//**
+	 * 年龄
+	 *//*
+	private String age;
+
+	*//**
+	 * 生日
+	 *//*
+	private String birthday;*/
+
 
 	public String getType() {
 		return type;
@@ -52,49 +53,6 @@ public class OtherAccountReq {
 
 	public void setType(String type) {
 		this.type = type;
-	}
-
-	
-
-	public String getAppId() {
-		return appId;
-	}
-
-	public void setAppId(String appId) {
-		this.appId = appId;
-	}
-
-
-	public String getHoneyName() {
-		return honeyName;
-	}
-
-	public void setHoneyName(String honeyName) {
-		this.honeyName = honeyName;
-	}
-
-	public String getSex() {
-		return sex;
-	}
-
-	public void setSex(String sex) {
-		this.sex = sex;
-	}
-
-	public String getAge() {
-		return age;
-	}
-
-	public void setAge(String age) {
-		this.age = age;
-	}
-
-	public String getBirthday() {
-		return birthday;
-	}
-
-	public void setBirthday(String birthday) {
-		this.birthday = birthday;
 	}
 
 	public String getMac() {
@@ -105,20 +63,28 @@ public class OtherAccountReq {
 		this.mac = mac;
 	}
 
-	public String getAppToken() {
-		return appToken;
-	}
-
-	public void setAppToken(String appToken) {
-		this.appToken = appToken;
-	}
-
 	public String getClassName() {
 		return className;
 	}
 
 	public void setClassName(String className) {
 		this.className = className;
+	}
+
+	public String getuId() {
+		return uId;
+	}
+
+	public void setuId(String uId) {
+		this.uId = uId;
+	}
+
+	public String getAccessToken() {
+		return accessToken;
+	}
+
+	public void setAccessToken(String accessToken) {
+		this.accessToken = accessToken;
 	}
 	
 	
