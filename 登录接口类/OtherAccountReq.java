@@ -20,32 +20,14 @@ public class OtherAccountReq {
 	private String accessToken;
 	
 	/**
+	 * QQ oauth_consumer_key
+	 */
+	private String authKey;
+	
+	/**
 	 * mac地址
 	 */
 	private String mac;
-	
-/*	
-	
-	*//**
-	 * 昵称
-	 *//*
-	private String nickName;
-	
-	*//**
-	 * 性别
-	 *//*
-	private String sex;
-	
-	*//**
-	 * 年龄
-	 *//*
-	private String age;
-
-	*//**
-	 * 生日
-	 *//*
-	private String birthday;*/
-
 
 	public String getType() {
 		return type;
@@ -86,8 +68,14 @@ public class OtherAccountReq {
 	public void setAccessToken(String accessToken) {
 		this.accessToken = accessToken;
 	}
-	
-	
+
+	public String getAuthKey() {
+		return authKey;
+	}
+
+	public void setAuthKey(String authKey) {
+		this.authKey = authKey;
+	}
 	
 
 }
