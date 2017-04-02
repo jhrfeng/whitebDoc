@@ -1,3 +1,8 @@
+dissmiss是关闭modal,同时也可以接受参数
+
+ondiddissmiss是监听modal关闭事件，同时可以回调关闭传递的参数
+-------------------------------------------------------------------
+
 EventEmitter
 
 SlideOptions
@@ -10,3 +15,27 @@ SlideOptions
 提供APP内容更新
 提供APP版本更新
 提供后续所有源码获取
+
+
+在应用商店搜一下“Allow-Control-Allow-Origin: ”就ok了
+
+这个坑我也遇到过，整个过程我都写在我的博客里了：http://www.haoguangbo.com/arc...
+
+简单来说，因为真机里网页的访问走的是file://协议，而非http://或https://，因此不会出现跨域问题，但是浏览器里开发调试的时候，由于实际上是ionic的CLI在本地跑了一个小服务器，网页等资源都是通过http加载的，就会出现跨域问题。
+解决这个其实很简单，后端服务器不需要做任何处理，只需要在ionic的配置文件（ionic.config.js）里加上proxy这个字段，如下所示：
+
+{
+  "name": "appname",
+  "email": "",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "https://api.instagram.com/api"
+    }
+  ]
+}
+然后，在想访问https://api.instagram.com/api/xxx的时候，就改成访问/api/xxx，ionic会自动把以http://localhost:8000/api开头的请求都转发到https://api.instagram.com/api，就像shadowsocks一样。
+最后重新ionic serve重启一下ionic就可以了。
+这个问题，ionic团队真应该写到官方文档里，实在是坑了太多的人了。
+希望能帮到题主。
