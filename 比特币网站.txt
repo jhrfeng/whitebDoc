@@ -1,7 +1,13 @@
+https://www.pingxx.com/api#支付渠道-extra-参数说明
+https://github.com/PingPlusPlus/pingpp-nodejs
+
+http://cat-vip.vicp.io/test_gateway
+
+
 http://www.ljzbtcfund.com/
 
 月  9:41:59
-主要设计 Logo
+主要设计 Logo2876073312
 一，  四张宣传海报1.【陆家嘴比特币套利基金】2.【OTC】3.【搬砖】4.【配置】
 二，  首页新手指南，四张图标
 三，  登录注册页面旁边一张展示图【可突出比特币高收益，金币金钱】
@@ -13,7 +19,7 @@ http://www.ljzbtcfund.com/
 
 ---------------------------------------------------------------------------
 四张海报文案信息
-https://www.sosobtc.com/app
+https://www.sosobtc.com/app/asdfg
 下载APP，安装打开后首页中有张轮播图， 轮播图有陆家嘴比特币套利基金，点击进去查看详情（参考上面文案信息）
 
 
@@ -29,7 +35,7 @@ https://www.sosobtc.com/app
 ---------------------------------------------------------------------
 其他文案信息[比如安全，比如图标， 比如登录注册页面小图片]
 可以参考如下网站
-https://bixin.com/
+https://bixin.com/zx123
 https://www.bitbank.com
 https://www.bitvc.com/
 ----------------------------------------------------------------------
