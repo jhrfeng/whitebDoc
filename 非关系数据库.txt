@@ -1,0 +1,86 @@
+http://www.cnblogs.com/lpyan/p/5608333.html
+打开一个cmd窗口 使用cd命令切换目录到 C:\redis 运行 redis-server.exe redis.conf 。
+
+如果想方便的话，可以把redis的路径加到系统的环境变量里，这样就省得再输路径了，后面的那个redis.conf可以省略，如果省略，会启用默认的。输入之后，会显示如下界面：
+
+创建数据目录
+
+MongoDB将数据目录存储在 db 目录下。但是这个数据目录不会主动创建，我们在安装完成后需要创建它。
+
+我的目录是D:\data\db，其中db文件夹也需要创建，岂不会自动生成
+
+启动mongodb
+
+D:\Program Files\MongoDB\Server\3.4\bin\mongod.exe --dbpath D:\data\db
+1
+1
+但是这样启动太麻烦啦，我们不可能每次都这样来启动，所以我们把它配置成window服务：
+
+为日志文件和配置文件创建目录
+
+配置文件目录：D:\data\config\mongod.cfg 
+日志文件目录：D:\data\dblog\
+
+接着我们再配置mongod.cfg，
+
+systemLog:
+    destination: file
+    path: D:\data\dblog\mongod.log
+    logAppend: true
+storage:
+    journal:
+        enabled: true
+    dbPath: D:\data\db
+net:
+    port: 27017
+
+systemLog系统日志配置:
+
+destination: file: 
+描述：日志输出目的地，可以指定为“ file”或者“syslog”，表述输出到日志文件，如果不指定，则会输出到标准输出中（standard output）。
+
+path: D:\data\dblog\mongod.log
+
+描述：日志的路径，其中D:\data\dblog这个路径是我自己创建的。mongod.log启动后，会自动生成。
+
+logAppend: true：
+
+描述：如果为true，当mongod/mongos重启后，将在现有日志的尾部继续添加日志。否则，将会备份当前日志文件，然后创建一个新的日志文件；默认为false。
+
+storage数据存储配置：
+
+journal:
+        enabled: true
+
+描述：是否开启journal日志持久存储，journal日志用来数据恢复，是mongod最基础的特性，通常用于故障恢复。64位系统默认为true，32位默认为false，建议开启，仅对mongod进程有效。
+
+dbPath: D:\data\db
+1
+1
+描述：mongodb数据存储位置。
+
+net:
+    port: 27017
+
+描述：mongod/mongos侦听端口，默认为27017；不过因为mongodb有2种典型的架构模式：replica set和sharding，如果开发者在一个节点上部署多个mongod实例，需要注意修改此端口以避免冲突。
+
+安装服务
+
+配置好上面后，在到cmd中执行（使用管理员权限）：
+
+D:\Program Files\MongoDB\Server\3.4\bin>mongod.exe --config "D:\data\config\mongod.cfg" --install
+1
+1
+启动mongodb服务
+
+接着执行：net start MongoDB
+
+D:\Program Files\MongoDB\Server\3.4\bin>net start MongoDB
+MongoDB 服务正在启动 ..
+MongoDB 服务已经启动成功。
+
+注意：如果启动出现错误，可以查看日志。 
+
+
+------------------------------------------------------------------------------------------------------
+redis-server.exe redis.conf 

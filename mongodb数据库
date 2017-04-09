@@ -1,0 +1,53 @@
+mongodb数据库同样离不开必要的维护，如备份、恢复、导入、导出。
+
+其实备份和恢复比导入和导出要方便些，而且一般不会出错，所以大部分时候使用备份和恢复操作就可以了
+
+1. 备份Mongodb
+
+mongodump -h test.xxxx.com:52000 -d dataname -o /home/aa/dev/mongodb/data
+
+mongodump mongo导出数据库命令 mongodump --help 可以查看该命令下所有的帮助
+
+-h 导出源
+
+-d 要导出的数据库名称
+
+-o 数据库要导出的位置
+
+在终端滚过N行之后，数据库导出完成，可以去/home/aa/dev/mongodb/data 目录下查看导出的文件，bson格式的（我导出后没有马上就看到文件，等了一会才出现的，原因不明）
+
+2. 恢复使用：mongorestore 命令
+
+mongorestore -d cmsdev  /home/xx/dev/mongodb/data/cmsdev
+
+-d 使用的数据库名称
+
+后面直接加你刚才导出的目录，这样是直接恢复所有表
+
+如果-c 是恢复一个表
+
+3. 导入
+
+mongoimport -d my_mongodb -c user user.dat
+
+参数说明:
+
+-d 指明使用的库, 本例中为” my_mongodb”
+
+-c 指明要导出的表, 本例中为”user”
+
+可以看到导入数据的时候会隐式创建表结构
+
+4. 导出
+
+mongoexport -d my_mongodb -c user -o user.dat
+
+参数说明:
+
+-d 指明使用的库, 本例中为” my_mongodb”
+
+-c 指明要导出的表, 本例中为”user”
+
+-o 指明要导出的文件名, 本例中为”user.dat”
+
+从上面可以看到导出的方式使用的是JSON 的样式

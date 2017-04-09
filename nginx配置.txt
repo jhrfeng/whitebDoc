@@ -1,0 +1,64 @@
+http://wiki.ubuntu.org.cn/Nginx
+
+odejs博客的nginx配置
+2014年8月13日 13121次浏览
+首先感谢我同事，参考他的博客，我才完成了我的nodejs博客的配置。 nodejs运行之后，关掉链接，网站运行就会断开，需要安装forever，后台执行。 安装方法如下（在windows和Linux下都能运行）：
+
+//forever的安装：
+npm install forever -g
+//使用forever启动守护进程：
+forever start your_app.js
+//关闭守护进程：
+forever stop your_app.js
+//重启守护进程：
+forever restart your_app.js
+//如果需要记录输出日志和错误：
+forever start -l forever.log -o out.log -e err.log your_app.js
+//查看正在运行的程序：
+forever list
+
+
+nginx: [emerg] socket() [::]:80 failed (97: Address family not supported by protocol)
+解决办法：
+
+vim /etc/nginx/conf.d/default.conf
+
+listen       80 default_server;
+listen       [::]:80 default_server;
+
+修改为:
+listen       80;
+#listen       [::]:80 default_server;
+
+重启nginx
+
+sudo service nginx restart
+
+
+https://cnodejs.org/topic/56a3c8f47ec020ed4b96b2cd
+
+分享几个nginx调试命令: Debian Linux
+安装nginx，使用apt-get 即可
+
+apt-get install nginx
+
+测试nginx配置文件
+
+nginx -t -c /etc/nginx/nginx.conf 
+
+重启nginx服务器
+
+/etc/init.d/nginx restart
+
+设置某脚本开机启动 
+
+sudo chmod 755 /etc/init.d/foobar
+sudo update-rc.d foobar defaults     #开机时启动
+sudo update-rc.d -f foobar remove　　#开机时不启动
+
+find / -name 'node'  #在根目录 '/'　查找　node的位置（某些场合会用到） 
+
+
+有时侯nginx在windows下面怎么杀也杀不死，可以使用此脚本　（Windows 2003 测试有效）
+
+taskkill /F /IM nginx.exe > nul
