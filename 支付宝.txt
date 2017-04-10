@@ -4,3 +4,5 @@ https://b.alipay.com/signing/productDetail.htm?productId=I1011000290000001000
 https://b.alipay.com/signing/productDetail.htm?productId=I1011000290000001000
 
 https://github.com/gwuhaolin/direct-alipay
+
+https://b.alipay.com/order/productDetail.htm?productId=2015110218012942
