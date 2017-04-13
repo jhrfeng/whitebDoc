@@ -9,3 +9,7 @@ http://www.yunpian.com/admin/main // 短信管理平台 j4
 mongodump -h 127.0.0.1:27017 -d btb -o /home/producation_mongod_dak/data
 查看状态
 systemctl status mongod
+
+
+mongodb
+http://www.runoob.com/mongodb/mongodb-update.html
