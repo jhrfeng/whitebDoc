@@ -1,0 +1,15 @@
+https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-16-04
+nginx维护
+1. 停止nginx
+systemctl stop nginx
+
+http://www.yunpian.com/admin/main // 短信管理平台 j4
+
+每日备份
+mongodump -h 127.0.0.1:27017 -d btb -o /home/producation_mongod_dak/data
+查看状态
+systemctl status mongod
+
+
+mongodb
+http://www.runoob.com/mongodb/mongodb-update.html
