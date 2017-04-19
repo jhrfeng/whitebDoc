@@ -1,3 +1,8 @@
+http://su.baidu.com/console/add-website/add-website-step3.html#ns/58f7048a5f3ec23180a8a916/  CDN百度云解析
+https://cloud.baidu.com/beian/index.html
+https://console.bce.baidu.com/qualify/#/qualify/index
+
+
 https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-16-04
 nginx维护
 1. 停止nginx
