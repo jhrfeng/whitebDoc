@@ -1,0 +1,22 @@
+########银行开户
+1. 基本户
+2. 代扣税协议
+
+####775
+http://blog.csdn.net/lisongjia123/article/details/51260265
+
+
+https://beian.aliyun.com/?spm=5176.2020520137.103.3.1q0GzV  备案
+
+####名片打印
+https://world.tmall.com/item/14894793360.htm?id=14894793360&ali_refid=a3_430620_1006:1103558512:N:%E5%90%8D%E7%89%87%E5%8D%B0%E5%88%B7:acef37aacd782db9289b49076c80290a&ali_trackid=1_acef37aacd782db9289b49076c80290a&spm=a312a.7700714.0.0.fJF7cB&tbpm=1
+
+####名片样板
+
+
+#######SSl加密
+https://foofish.net/https-free-for-lets-encrypt.html
+http://www.cnblogs.com/chjbbs/p/5748369.html
+https://www.upyun.com/https
+
+openssl req -new -newkey rsa:2048 -sha256 -nodes -out ljzbtcbank_xyz.csr -keyout ljzbtcbank_xyz.key -subj "/C=CN/ST=Shanghai/L=Shanghai/O=Ljzbtcbank Inc./OU=Web Security/CN=ljzbtcbank.xyz"

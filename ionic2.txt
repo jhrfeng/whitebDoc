@@ -1,6 +1,12 @@
+http://www.ionic-china.com/doc/ionic-debug.html#RemoteDebugging  调试
+
+{{data?.xxx}}  //?.安全道航符确认为null不会报错
+
  使用原生打开页面
  Native Page Transitions
  https://ionicframework.com/docs/native/native-page-transitions/
+
+ http://tvboxnow.com/forum-38-1.html
 
 [ion-col]
 The available attributes are: width-10, width-20, width-25, width-33, width-50, width-67, width-75, width-80, width-90

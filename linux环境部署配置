@@ -1,0 +1,18 @@
+
+#########配置nodejs
+https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-16-04
+
+
+########配置nodejs进程+Nginx
+https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-16-04  express发布
+
+
+#########redis外面访问
+locate redis.conf 
+
+vim /etc/redis/redis.conf 
+
+systemctl restart redis
+
+#########redis外面访问
+vim /etc/mongod.conf 

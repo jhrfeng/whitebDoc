@@ -1,3 +1,10 @@
+8s8nvj8jebnxo9ud.alicloudddos.com
+47.90.102.203
+
+/etc/letsencrypt/live/www.ljzbtcbank.xyz/fullchain.pem. Your cert
+
+
+
 https://www.pingxx.com/api#支付渠道-extra-参数说明
 https://github.com/PingPlusPlus/pingpp-nodejs
 
