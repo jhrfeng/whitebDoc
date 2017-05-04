@@ -1,0 +1,11 @@
+5902b077b209130502de9e98
+
+
+{ "_id" : ObjectId("58f83267bc8fdf2e1e64a61b"), "outtrade" : "66688820170420120039", "tradeno" : "2017042012003920170420120039", "payAmount" : 30000, "pid" : { "join" : 1000, "week" : 180, "shouyi" : 30, "name" : "比特币套利基金半年", "pid" : "20170002" }, "orderid" : "02017042012003900039", "userid" : "58f1c351422a2d1b6e91ca99", "status" : "1", "updated" : ISODate("2017-04-20T04:00:39.292Z"), "created" : ISODate("2017-04-20T04:00:39.292Z"), "openStatus" : "0", "openAmount" : 34438, "opendate" : ISODate("2017-06-29T04:00:39.293Z"), "__v" : 0 }
+{ "_id" : ObjectId("5902b4f8b209130502de9e9d"), "outtrade" : "66688820170428112024", "tradeno" : "2017042811202420170428112024", "payAmount" : 50000, "pid" : { "join" : 1000, "week" : 180, "shouyi" : 30, "name" : "比特币套利基金半年", "pid" : "20170002" }, "orderid" : "2020170428112024202024", "userid" : "58f1c351422a2d1b6e91ca99", "status" : "0", "updated" : ISODate("2017-04-28T03:20:24.299Z"), "created" : ISODate("2017-04-28T03:20:24.299Z"), "openStatus" : "0", "openAmount" : 57397, "opendate" : ISODate("2017-06-29T03:20:24.299Z"), "__v" : 0 }
+{ "_id" : ObjectId("5902b9e8ca3b1b09bf3bec3d"), "outtrade" : "00000000_08", "tradeno" : "00000000_08", "payAmount" : 50000, "pid" : { "join" : 1000, "week" : 180, "shouyi" : 30, "name" : "比特币套利基金半年", "pid" : "20170002" }, "orderid" : "00000000_08", "userid" : "58f1c351422a2d1b6e91ca99", "status" : "0", "updated" : ISODate("2017-04-28T03:41:29.001Z"), "created" : ISODate("2017-04-27T16:00:00Z"), "openStatus" : "0", "openAmount" : 57397, "opendate" : ISODate("2017-06-28T16:00:00Z"), "__v" : 0 }
+> db.orders.update({orderid:"5902b9e8ca3b1b09bf3bec3d"}, {$set:{'status':'1', orderid:'1420170428111444141444'}})
+WriteResult({ "nMatched" : 0, "nUpserted" : 0, "nModified" : 0 })
+> db.orders.update({orderid:"00000000_08"}, {$set:{'status':'1', orderid:'1420170428111444141444'}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.orders.find({userid:"58f1c351422a2d1b6e91ca99"});
