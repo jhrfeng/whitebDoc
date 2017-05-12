@@ -1,0 +1,82 @@
+-------------费用计算-------------------
+产品有超26款， 费用根据工作量计算
+
+
+
+--------------------------------------
+
+
+
+
+
+root/oracle1234
+weblogic/weblogic1234
+
+mittest/mittest
+
+224数据库 mitprod/yong3da8#
+
+
+
+
+
+transResultCode:"1" 成功， 0 失败
+
+policy_core_no保单号
+preUw： y第一次调用（代表预核保），N第二个调用（代表核保）===
+
+1. 生产环境1， 查接口，2 80013（核保接口）  80014（承保接口）
+
+
+影像上传--最主要是单证号【docuId】
+-------常见问题，PDF没有生成，一般去共享目录去看【参看共享3】
+
+
+UAT1926.168.101.205 weblogic/weblogic1234    
+
+/oracle/weblogic/user_projects/domains/n22/servers/bdfz_server (发布前台不需要重启)
+重启命令是
+
+
+/home/ssdev/resource uat共享目录
+1. APP更新（查看main.js 生成地址和platfrom）=====然后数据库进行更新select * from plat_app_version for updat（更改版本字段）
+
+2. clientSync/producactions （产品缓存目录，删除）
+
+3. policy_pdf(预核保是没有影像的)【_0.pdf cA返回的签名影像， 下载下来进行查看勾选，签名等数据】
+
+
+生产环境
+/pkufi/resource 生产共享目录
+
+注意事项（需要检查，地址， 前三个不要替换，第三个实际情况进行（比如外系统接口地址，数据库地址））
+log4j         
+spring【定时任务】在文件中[timer定时任务, ref][第一台223注释掉的， 222是启动的]， 如果替换只替换222
+config.properties
+main.js
+
+
+----------重置密码维护---------------------------
+
+
+
+
+
+
+----------服务器重启--------------------------------
+ps -ef|grep weblogic
+:
+kill -9     Name=ManagedServer1
+:
+/oracle/weblogic/user_projects/domains/n22/bin
+:
+nohup ./startManagedWebLogic.sh ManagedServer1 http://umitdbapp01:7001 &
+
+
+
+
+
+
+
+
+http://blog.csdn.net/chen_zw/article/details/9292455

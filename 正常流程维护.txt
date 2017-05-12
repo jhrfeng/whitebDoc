@@ -29,13 +29,19 @@ https://whois.aliyun.com/whois/domain/jinzuanw.com?spm=5334.7477273.3.1
 // 数据库修改
 db.orders.update({userid:"58f246b2099b8c56ceb1f48c"}, {$set:{'status':'1'}})
 
-db.orders.update({orderid:"4920170421104943494943"}, {$set:{'status':'1'}})
+db.orders.update({orderid:"1320170505111333131333"}, {$set:{'created':new Date("2017-01-01")}})
 
 db.orders.update({orderid:"4820170421094826484826"}, {$set:{'pid':{"pid":"20170000", "name":"比特币套利基金新月", "shouyi":8.0, "week": 30, "join":1000}}});
 db.orders.update({orderid:"1520170421101543151543"}, {$set:{'pid':{"pid":"20170000", "name":"比特币套利基金新月", "shouyi":8.0, "week": 30, "join":1000}}});
 
 
 
+https://www.cyberciti.biz/faq/linux-unix-nginx-access-control-howto/ 黑名单
+
+
 // 备份
 { "_id" : ObjectId("58f2470b099b8c56ceb1f48e"), "outtrade" : "66688820170416001507", "tradeno" : "2017041600150720170416001507", "payAmount" : 1000, "pid" : { "join" : 1000, "week" : 30, "shouyi" : 12, "name" : "比特币套利基金新月", "pid" : "20170000" }, "orderid" : "1520170416001507151507", "userid" : "58f246b2099b8c56ceb1f48c", "status" : "0", "updated" : ISODate("2017-04-15T16:15:07.262Z"), "created" : ISODate("2017-04-15T16:15:07.262Z"), "openStatus" : "0", "openAmount" : 1010, "opendate" : ISODate("2017-01-29T16:15:07.263Z"), "__v" : 0 }
+
+
+db.logs.find({'created':{'$gte':new Date("2017-05-01"), '$lt':new Date("2017-05-03")}}).count()
 
