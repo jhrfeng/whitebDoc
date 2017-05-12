@@ -1,7 +1,30 @@
+唐丹5月10号
+
+/oracle/weblogic/user_projects/domains/n22/servers/bdfz_server/WEB-INF
+
+
+
+select * from sfss_insure_msg where 1=1 and command_code like '80013%' 
+and policy_id in(select policy_id from sfss_insure_policy where policy_core_no = '2529000084') 
+order by create_time desc
+
+update sfss_insure_policy set policy_status=30 where policy_core_no in('2529000084','2309000679')
+
+
+select * from plat_app_version for update
+
+
+
+select * from sfss_payment_msg
+where siGN LIKE '%2229000058%'  -- 查询交易结果
+supplement
+
+
 2509000380
 
 
-1， 获取密码，【短信接口问题】【客户已解决】
+1， 获取密码，【短信接口问题】【客户已解决】supplement
+
 
 2， 性别相反问题，保单查询，客户查询【性别更改】 
 
