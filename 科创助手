@@ -10,10 +10,14 @@ http://zjcboy.com/2016/10/09/ionic2-jpush-demo/
 
 https://my.oschina.net/crazymus/blog/376310
 
+极光：18989474980  123456zczn，
+
+cordova plugin add https://github.com/jpush/jpush-phonegap-plugin.git --variable APP_KEY=eae49b7b6b74182df9eb211a
+
+cordova plugin add jpush-phonegap-plugin --variable API_KEY=eae49b7b6b74182df9eb211a
 
 
-
-
+cordova plugin add jpush-phonegap-plugin --variable API_KEY=e6531daceaf6e9f5df5eaabe
 
 
 
