@@ -1,6 +1,17 @@
 https://ionicacademy.com/ionic-include-css-files-from-npm/ 外部npm
 
 
+https://www.npmjs.com/package/ionic2-jpush
+
+disable chrome://inspect debugging in IONIC2 app
+
+n the AndroidManifest.xml there should be a android:debuggable="true" attribute on the <application> element. If you remove that and build the app, it shouldn't be debuggable anymore.
+
+I think when you build your Android app using command ionic build android --release it won't add the android:debuggable property to the manifest xml.
+
+
+------------------------------------------------
+
 http://www.ionic-china.com/doc/ionic-debug.html#RemoteDebugging  调试
 
 {{data?.xxx}}  //?.安全道航符确认为null不会报错
