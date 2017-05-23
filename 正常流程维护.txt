@@ -29,10 +29,22 @@ https://whois.aliyun.com/whois/domain/jinzuanw.com?spm=5334.7477273.3.1
 // 数据库修改
 db.orders.update({userid:"58f246b2099b8c56ceb1f48c"}, {$set:{'status':'1'}})
 
-db.orders.update({orderid:"1320170505111333131333"}, {$set:{'created':new Date("2017-01-01")}})
+db.orders.update({orderid:"1320170505111333131333"}, {$set:{'created':new Date("2017-04-21")}})
 
 db.orders.update({orderid:"4820170421094826484826"}, {$set:{'pid':{"pid":"20170000", "name":"比特币套利基金新月", "shouyi":8.0, "week": 30, "join":1000}}});
 db.orders.update({orderid:"1520170421101543151543"}, {$set:{'pid':{"pid":"20170000", "name":"比特币套利基金新月", "shouyi":8.0, "week": 30, "join":1000}}});
+
+
+
+db.users.find({"_id":ObjectId('58f1c351422a2d1b6e91ca99')})
+
+db.users.update({"_id":ObjectId('58f1c351422a2d1b6e91ca99')}, {$set:{"password" : "e10adc3949ba59abbe56e057f20f883e",username:"13567637236","created" : ISODate("2017-04-06T04:55:50.305Z"), "bankcount" : "", "bankcode" : "", "name" : "叶京云", "roletye" : "0", "mobStatus" : "0", "userStatus" : "1", "is_admin" : false, "zhifuPay" : "", "zijinPay" : "", "remoteip" : "", "otherTel": "", "address" : "", "mailSec" : false, "email" : "", "header": "", "__v" : 0, "weixin" : "", "qq" : "", "updated" : ISODate("2017-04-26T11:10:01.068Z")}},false,true)
+
+
+{"password" : "e10adc3949ba59abbe56e057f20f883e", "username" : "13641892349", "created" : ISODate("2017-04-06T04:55:50.305Z"), "bankcount" : "", "bankcode" : "", "name" : "井浩然", "idcard" : "
+321321199009305519", "roletye" : "0", "mobStatus" : "0", "userStatus" : "1", "is_admin" : false, "zhifuPay" : "", "zijinPay" : "", "remoteip" : "", "otherTel"
+: "", "address" : "", "mailSec" : false, "email" : "“, "header": "", "__v" : 0, "weixin" : "", "qq" : "", "updated" : ISODate("2017-04-26T11:10:01.068Z") }
+
 
 
 
