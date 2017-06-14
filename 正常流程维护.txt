@@ -45,3 +45,5 @@ https://www.cyberciti.biz/faq/linux-unix-nginx-access-control-howto/ 黑名单
 
 db.logs.find({'created':{'$gte':new Date("2017-05-01"), '$lt':new Date("2017-05-03")}}).count()
 
+db.users.update({username:"13934645894"}, {$set:{'zhifuPay':'DLHB5622226@126.com'}})
+

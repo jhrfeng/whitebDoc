@@ -1,3 +1,6 @@
+http://blog.csdn.net/tongxinxiao/article/details/70941688
+
+
 
 https://www.npmjs.com/package/ionic2-jpush
 
