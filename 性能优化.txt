@@ -1,3 +1,5 @@
+http://www.oschina.net/translate/angularjs-ui-router-nested-routes
+
 1. 支付结果除了异步通知，还有自动查询结果功能
 
 2.提供账单查询【客户支付，提供流水号】
