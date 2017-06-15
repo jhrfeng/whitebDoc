@@ -1,5 +1,8 @@
 http://blog.csdn.net/tongxinxiao/article/details/70941688
 
+http://www.jianshu.com/p/9c00358bcc44
+
+https://ionicacademy.com/ionic-include-css-files-from-npm/ 外部npm
 
 
 https://www.npmjs.com/package/ionic2-jpush

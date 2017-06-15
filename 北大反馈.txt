@@ -1,7 +1,41 @@
+select * from sfss_insure_msg where command_code like '%80014%' 
+and policy_id in(select policy_id from sfss_insure_policy where policy_core_no = '2709000635') 
+order by create_time desc
+
+select * from sfss_payment_msg where sign like '%2709000635%'
+
+select * from sfss_payment_msg where policy_no = '2709000635'
+
+select * from sfss_insure_policy where policy_id='7501561766040040970' for update
+
+select * from plat_app_version for update
+
+
+
+
+liushumei:
+我们只要确保把这些影像给到核心就行了，电子保单是核心生成的
+我:
+只要看transcode是不是1就行？
+liushumei:
+对的，是1表示上传成功
+liushumei:
+最好再看下请求报文，docuId为101010101是投保单，为101030161是投保提示书，确人这两项影像已传到核心
+liushumei:
+select * from sfss_insure_msg where command_code like '%upload%' 
+and policy_id in(select policy_id from sfss_insure_policy where policy_core_no = '保单号') 
+order by create_time desc
+liushumei:
+之前我给陈兴的文档里都有整理说明
+我:
+好
+
+
 唐丹5月10号
 
 /oracle/weblogic/user_projects/domains/n22/servers/bdfz_server/WEB-INF
 
+select * from SFSS_INSURE_UPLOAD_SUPPLEMENT for update
 
 
 select * from sfss_insure_msg where 1=1 and command_code like '80013%' 
