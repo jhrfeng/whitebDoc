@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 http://www.cnblogs.com/happen-/p/6138712.html  iframe ios权限
 
+=======
+http://blog.csdn.net/tongxinxiao/article/details/70941688
+>>>>>>> b5870541408959a39ded8e1d39d67d6161eddda6
 
 http://www.jianshu.com/p/9c00358bcc44
 
