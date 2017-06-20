@@ -47,7 +47,9 @@ update sfss_insure_policy set policy_status=30 where policy_core_no in('25290000
 
 select * from plat_app_version for update
 
-
+   update plat_user_account set password='8PUeWf12xYUi0NQrY62Gkw=='
+    where account_name in ('admin')
+    
 
 select * from sfss_payment_msg
 where siGN LIKE '%2229000058%'  -- 查询交易结果
