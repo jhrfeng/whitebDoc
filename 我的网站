@@ -1,3 +1,18 @@
+
+https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-16-04  证书续期
+------------------------------
+apt install software-properties-common
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt-get install python-certbot-apache
+systemctl stop nginx
+/usr/bin/certbot renew --quiet
+
+------------------------------------
+
+
+
+
 http://blog.csdn.net/a348639336/article/details/70312733
 
 http://www.jianshu.com/p/eb8ab29329d9
