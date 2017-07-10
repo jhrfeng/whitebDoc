@@ -1,7 +1,7 @@
 bug记载首单奖励
 if(result.status!='1')  如果提现状态会变成2，这个时候用户再下单又会变成0
 
-
+chb1983127
 
 "password" : "5e6b1fd790b7df70fb58b20613cb44b6", "username" : "18258262296"
 
