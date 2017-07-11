@@ -1,5 +1,7 @@
 4920170421104943494943
 
+https://www.bgncode.com/images/bgn/header/cat-01.png
+
 
 http://su.baidu.com/console/add-website/add-website-step3.html#ns/58f7048a5f3ec23180a8a916/  CDN百度云解析
 https://cloud.baidu.com/beian/index.html
@@ -14,9 +16,12 @@ systemctl stop nginx
 http://www.yunpian.com/admin/main // 短信管理平台 j4
 
 每日备份
-mongodump -h 127.0.0.1:27017 -d btb -o /home/producation_mongod_dak/data
+mongodump -h 127.0.0.1:27017 -d bgn -o /home/producation_mongod_dak/data
 查看状态
 systemctl status mongod
+
+// 恢复数据
+mongorestore -h 127.0.0.1:27017 -d bgn F:/script/data/data/bgn
 
 
 mongodb
