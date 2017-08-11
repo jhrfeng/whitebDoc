@@ -1,3 +1,33 @@
+select count(*) from sfss_customer_main where CUSTOM_STATUS='0'
+
+select count(*) from sfss_proposal
+
+
+--1、移动展业APP下载次数；
+从蒲公英上面查看下载次数
+--2、代理人实际注册人数，即使用工号完成首次登陆的代理人人数；
+select count(1) from plat_user_account u where u.account_type='2' and u.pwd_time is not null and u.pwd_time>to_date('2017-04-12','yyyy-mm-dd')
+--3、通过移动展业APP提交的新契约件数和保费数，需细分至机构；
+select org_name 机构,c 件数,s 总保费 from (select o.org_name,count(ip.policy_id) c,sum(ip.premiumsum) s from sfss_insure_policy ip,plat_org o 
+where ip.policy_status in ('10','20') and ip.agent_code like '%A__' and '86'||substr(ip.agent_code,-2)=o.org_code and create_date>to_date('2017-04-12','yyyy-mm-dd')
+group by o.org_name ) order by s desc
+--4、通过移动展业APP提交且承保的新契约件数和保费数，需细分至机构。仅考虑承保过即可，无需考虑是否NTU；
+select org_name 机构,c 件数,s 总保费 from (select o.org_name,count(ip.policy_id) c,sum(ip.premiumsum) s from sfss_insure_policy ip,plat_org o 
+where ip.policy_status in ('10') and ip.agent_code like '%A__' and '86'||substr(ip.agent_code,-2)=o.org_code and create_date>to_date('2017-04-12','yyyy-mm-dd')
+group by o.org_name ) order by s desc
+--5、通过移动展业APP回复照会的保单件数；
+select count(1) from sfss_insure_msg where command_code = '7004-core-result' and create_time>to_date('2017-04-12','yyyy-mm-dd')
+--6、通过移动展业APP回销回执的保单件数；
+select count(1) from sfss_insure_msg where command_code = '7002-core-result' and create_time>to_date('2017-04-12','yyyy-mm-dd')
+
+
+
+
+
+
+
+
+
 -------------费用计算-------------------
 产品有超26款， 费用根据工作量计算
 

@@ -1,6 +1,19 @@
+
+select * from sfss_insure_msg where command_code like '%30009%' 
+and policy_id in(select policy_id from sfss_insure_policy where policy_core_no = '1229000167') 
+order by create_time desc
+
+职业代码不一致也会影响到保费计算。
+
+
+
+
+
 select * from sfss_insure_msg where command_code like '%80014%' 
 and policy_id in(select policy_id from sfss_insure_policy where policy_core_no = '2709000635') 
 order by create_time desc
+
+-- 10为落地核心状态
 
 select * from sfss_payment_msg where sign like '%2709000635%'
 
@@ -30,6 +43,8 @@ liushumei:
 我:
 好
 
+lthw62y/z8/RyO3f/Lrsyw==  1003170A45
+wgDieNc8hc2m0As9c71l3Q==  1002850A45
 
 唐丹5月10号
 
@@ -50,6 +65,11 @@ select * from plat_app_version for update
    update plat_user_account set password='8PUeWf12xYUi0NQrY62Gkw=='
     where account_name in ('admin')
     
+
+select t2.* from  payment_view1 t1 left join payment_view t2
+on t1.policy_no = t2.policy_no
+order by t2.create_date desc
+
 
 select * from sfss_payment_msg
 where siGN LIKE '%2229000058%'  -- 查询交易结果
