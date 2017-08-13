@@ -4,6 +4,28 @@ https://help.aliyun.com/knowledge_detail/39544.html
 https://help.aliyun.com/knowledge_detail/39550.html?spm=5176.7851635.2.14.WtRPTz
 
 https://help.aliyun.com/knowledge_list/51635.html?spm=5176.7739521.6.1064.we9ZZB
+https://help.aliyun.com/document_detail/31857.html?spm=5176.doc31837.6.599.VtWC22
+
+https://help.aliyun.com/document_detail/32073.html?spm=5176.doc32076.6.741.xmj2bS
+
+
+
+
+
+
+http://ssbetter.org/i.php?action=productdetails&id=4616
+215401886
+https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-16-04  证书续期
+------------------------------
+apt install software-properties-common
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt-get install python-certbot-apache
+systemctl stop nginx
+/usr/bin/certbot renew --quiet
+
+------------------------------------
+
 
 
 http://blog.csdn.net/a348639336/article/details/70312733
