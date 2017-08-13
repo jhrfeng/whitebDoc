@@ -1,3 +1,26 @@
+As could be guessed, there is a script that is being run behind the scene when you issue the "Cordova build android" command. This script needs to be found in order to see the config specified for Gradle version.
+
+You must go and check the following js file:
+
+$PROJECT_ROOT/platforms/android/cordova/lib/builders/GradleBuilder.js
+
+Then find the line including the following variable in the file:
+
+GradleBuilder.prototype.prepEnv
+And check the distributionUrl variable:
+
+var distributionUrl = process.env['CORDOVA_ANDROID_GRADLE_DISTRIBUTION_URL'] || 'http\\://services.gradle.org/distributions/gradle-2.2.1-all.zip';
+That's what you are looking for and what you need to change to gradle-2.10-all.zip URL;
+
+Now you can run the build command, and there you go!
+
+
+
+
+
+
+
+
 4920170421104943494943
 
 https://www.bgncode.com/images/bgn/header/cat-01.png
@@ -15,19 +38,19 @@ systemctl stop nginx
 
 http://www.yunpian.com/admin/main // 短信管理平台 j4
 
-<<<<<<< HEAD
 每日备份
 mongodump -h 127.0.0.1:27017 -d bgn -o /home/producation_mongod_dak/data
-=======
 每日备份j
 mongodump -h 127.0.0.1:27017 -d btb -o /home/producation_mongod_dak/data
->>>>>>> 44453eb2ca3aa33600091f26e2691a52ff739917
 查看状态
 systemctl status mongod
 
 // 恢复数据
 mongorestore -h 127.0.0.1:27017 -d bgn F:/script/data/data/bgn
 
+mongodump -h 127.0.0.1:27017 -d btb -o F:/producation_mongod_dak/data/btb
+
+mongorestore -h 127.0.0.1:27017 -d btb F:/producation_mongod_dak/data/btb
 
 mongodb
 http://www.runoob.com/mongodb/mongodb-update.html

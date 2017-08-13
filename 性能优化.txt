@@ -1,5 +1,20 @@
+https://github.com/charleyw/cordova-plugin-pgyer
+
+
 http://www.oschina.net/translate/angularjs-ui-router-nested-routes
 
 1. 支付结果除了异步通知，还有自动查询结果功能
 
 2.提供账单查询【客户支付，提供流水号】
+
+
+89f3eb39c09c0b99694a3a7b2c76fd1e
+
+cordova plugin add https://github.com/charleyw/cordova-plugin-pgyer.git --variable ANDROID_APP_ID=845fc2a63d8c91e19bed3ccc1ec4cd4b --variable IOS_APP_ID=89f3eb39c09c0b99694a3a7b2c76fd1e
+
+
+http://www.cnblogs.com/pengjunhao/p/6803606.html VUE打包
+
+https://github.com/charleyw/cordova-plugin-pgyer
+
+http://blog.csdn.net/zhuzhiqiang_zhu/article/details/53608398 热更新

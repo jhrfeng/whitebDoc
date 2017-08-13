@@ -1,8 +1,8 @@
 http://zijian.aliyun.com/detectResult.htm?domain=www.ljzbtcbank.com
 
+>postmaster@ljzbtcbank.com
 >
->
-> db.users.insert({username:'jinghaoran', password:'38df583771d6c28065741924aeae
+> db.users.insert({username:'jing123456J', password:'38df583771d6c28065741924aeae
 053a'})
 WriteResult({ "nInserted" : 1 })
 >
