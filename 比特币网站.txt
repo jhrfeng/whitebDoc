@@ -1,3 +1,20 @@
+https://www.btctrade.com/wallet.help.html
+
+
+
+db.superorders.mapReduce( function() { emit(this.type,1); }, function(key, values) {return Array.sum(values)}, {query:{status:"1"}, out:"payAmount" })
+
+
+{$match:{status:'1'}},
+
+db.superorders.aggregate([{$match:{status:'1'}},{$group : {_id : "$type", num_tutorial : {$sum : "$payAmount"}}}])
+
+
+
+
+
+
+
 bug记载首单奖励
 if(result.status!='1')  如果提现状态会变成2，这个时候用户再下单又会变成0
 
