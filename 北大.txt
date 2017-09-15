@@ -2,6 +2,7 @@ select count(*) from sfss_customer_main where CUSTOM_STATUS='0'
 
 select count(*) from sfss_proposal
 
+select count(*) from sfss_customer_main where CUSTOM_STATUS='0'
 
 --1、移动展业APP下载次数；
 从蒲公英上面查看下载次数

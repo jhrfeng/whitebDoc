@@ -1,3 +1,10 @@
+https://help.pingxx.com/article/123349 银联支付申请
+
+http://www.shanzhaibikaifa.com/ 山寨币开发
+
+http://www.shanzhaibikaifa.com/About/ 山寨币开发
+
+
 微信支付插件 https://github.com/xu-li/cordova-plugin-wechat.git
 
 
