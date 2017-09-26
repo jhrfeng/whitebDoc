@@ -1,7 +1,15 @@
 
 select * from sfss_insure_msg where command_code like '%30009%' 
+and policy_id in(select policy_id from sfss_insure_policy where policy_core_no = '2609001243') 
+order by create_time desc
+
+
+select * from sfss_insure_msg where command_code like '%30009%' 
 and policy_id in(select policy_id from sfss_insure_policy where policy_core_no = '1229000167') 
 order by create_time desc
+
+update sfss_insure_policy set is_upload_img = null where policy_core_no='2609001243'
+
 
 职业代码不一致也会影响到保费计算。
 
@@ -22,6 +30,7 @@ select * from sfss_payment_msg where policy_no = '2709000635'
 select * from sfss_insure_policy where policy_id='7501561766040040970' for update
 
 select * from plat_app_version for update
+
 
 
 

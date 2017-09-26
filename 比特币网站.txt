@@ -1,3 +1,49 @@
+http://www.jianshu.com/p/e8ad052929f3 代币开发
+
+http://www.56ye.net/com/yhw2014/sell/itemid-5809447.html 外包人
+
+http://wiki.jikexueyuan.com/project/solidity-zh/introduction-smart-contracts.html  代币开发
+
+http://blog.csdn.net/m0_37327416/article/details/72957319 以太坊代币开发
+
+http://ethfans.org/posts/129 创建以太坊币
+
+https://blockchain.info/zh-cn/api blockchain钱包API
+
+https://blockchain.info/zh-cn
+
+
+http://book.8btc.com/books/6/blockchain_guide/_book/hyperledger/
+
+http://www.8btc.com/build-your-own-blockchain
+
+http://book.8btc.com/books/6/blockchain-developer-guide/_book/ 开发比特币
+
+
+
+https://www.btctrade.com/wallet.help.html
+
+
+
+db.superorders.mapReduce( function() { emit(this.type,1); }, function(key, values) {return Array.sum(values)}, {query:{status:"1"}, out:"payAmount" })
+
+
+{$match:{status:'1'}},
+
+db.superorders.aggregate([{$match:{status:'1'}},{$group : {_id : "$type", num_tutorial : {$sum : "$payAmount"}}}])
+
+
+db.orders.aggregate([{$match:{opendate:{$gt: new Date('2017-08-31')}, opendate:{$lt: new Date('2017-11-01')}}},{$group : {_id : "$status", num_tutorial : {$sum : "$payAmount"}}}])
+
+
+ db.orders.find({"opendate":{ "$gt":new Date("2017-09-01"),"$lt":new Date("2017-10-29")}}, {opendate:1}).sort({opendate:-1})
+
+  db.orders.find({"created":{ "$gte":new Date("2017-09-08"),"$lte":new Date("2017-09-08")}})
+
+
+
+
+
 bug记载首单奖励
 if(result.status!='1')  如果提现状态会变成2，这个时候用户再下单又会变成0
 

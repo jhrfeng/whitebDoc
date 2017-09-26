@@ -1,3 +1,7 @@
+100289300092   苹果案例编号
+
+
+
 As could be guessed, there is a script that is being run behind the scene when you issue the "Cordova build android" command. This script needs to be found in order to see the config specified for Gradle version.
 
 You must go and check the following js file:
@@ -18,6 +22,27 @@ Now you can run the build command, and there you go!
 WriteResult({ "nMatched" : 0, "nUpserted" : 0, "nModified" : 0 })
 > db.invites.update({ "inviteid" : "18502005456", "userid" : "18756687776"}, {$set:{status:'1', money:4000, payAmount:100000, orderid:'2320170801172356232356', pid:{ "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "陆家嘴比特币一号【四期】", "pid" : "s20170003" }}})
 WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+
+59466b08a0cd6727ef7c30dc  18672801056
+
+{ "status" : "1", "money" : 8000, "payAmount" : 200000, "tradeno" : "", "orderid" : "20170907003","pid" : { "join" : 1000, "week" : 365, "shouyi" : 40, "name" : "比特币套利基金全年", "pid" : "20170003" }}
+
+
+{ "outtrade" : "1520170903161508151508", "tradeno" : "1520170903161508151508", "payAmount" : 5000, "pid" : { "join" : 1000, "week" : 365, "shouyi" : 40, "name" : "比特币套利基金一季", "pid" : "20170001" }, "orderid" : "1520170903161508151508", "userid" : "599ab0cac77cd92dca3fd001", "status" : "1", "updated" : new Date(), "created" : new Date('2017-09-12'), "openStatus" : "0", "openAmount" : 5246, "opendate" : new Date(2017-12-12) }
+
+
+{"inviteid" : "15221688852", "userid" : "18672801056", "created" : new Date("2017-07-28"), "updated" : new Date("2017-08-28"), "status" : "1", "money" : 4000, "payAmount" : 100000, "tradeno" : "", "orderid" : "22017070109024820248", "type" : "0", "zhifuPay" : "", "__v" : 0, "pid" : { "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "陆家嘴比特币一号【三期】", "pid" : "s20170002" } }
+
+
+
+{"payAmount" : 20000, "pid" : { "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "陆家嘴比特币一号【五期】", "pid" : "s20170004", "remark":"ICO置换，银行转账" }, "orderid" : "5920170817175922595922", "userid" : "599386adc77cd92dca3fcbe3", "status" : "1", "updated" : new Date(), "created" : new Date('2017-09-08'), "started" : new Date('2017-09-08'), "type" : "5", "openStatus" : "0", "openAmount" : 0}
+
+
+{ "_id" : ObjectId("59b69699346feb5064b6a795"), "payAmount" : 10000, "pid" : { "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "陆家嘴比特币一号【五期】", "pid" : "s20170004" }, "orderid" : "2520170714212501252501", "userid" : "595608b7ba0c5114b5527c83", "status" : "1", "updated" : ISODate("2017-09-11T13:58:49.207Z"), "created" : ISODate("2017-09-08T00:00:00Z"), "started" : ISODate("2017-09-08T00:00:00Z"), "type" : "5", "openStatus" : "0", "openAmount" : 0, "__v" : 0 }
+
+
+{ "outtrade" : "5920170817175922595922指数置换", "tradeno" : "5920170817175922595922指数置换", "payAmount" : 10000, "pid" : { "join" : 10000, "week" : 365, "shouyi" : "请关注QQ群", "name" : "海外基金链", "pid" : "ico001" }, "orderid" : "5920170817175922595922", "userid" : "596398b41a9b910a27dc4bac", "status" : "1", "updated" : new Date('2017-09-01'),new Date('2017-09-15'), "openStatus" : "1", "openAmount" : 0, "opendate" : new Date('2018-09-05')}
 
 
 
