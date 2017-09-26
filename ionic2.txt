@@ -1,3 +1,42 @@
+app.module.ts
+
+import { HttpModule } from '@angular/http';
+...
+@NgModule({
+    ...
+    imports: [
+        BrowserModule,
+        HttpModule,
+        IonicModule.forRoot(MyApp),
+    ],
+...
+MyPage.ts
+
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/timeout';
+...
+constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
+    }
+...
+
+ETPhoneHome() {
+        let path = 'http://localhost:8080/foo';
+        let encodedPath = encodeURI(path);
+        let timeoutMS = 10000;
+
+        this.http.get(encodedPath)
+            .timeout(timeoutMS)
+            .map(res => res.json()).subscribe(data => {
+                let responseData = data;
+                console.log(responseData);
+            },
+            err => {
+                console.log('error in ETPhoneHome');
+            });
+    }
+
+
 <<<<<<< HEAD
 http://www.cnblogs.com/happen-/p/6138712.html  iframe ios权限
 

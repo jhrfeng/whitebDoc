@@ -1,3 +1,7 @@
+ db.orders.aggregate([{$lookup:{from: "users",localField: "userid",foreignField: "_id",as: "inventory_docs"}},{ $match : { openStatus : '1', status:'1' } }])
+
+
+
 http://mongoosejs.com/docs/queries.html
 
 mongodb数据库同样离不开必要的维护，如备份、恢复、导入、导出。

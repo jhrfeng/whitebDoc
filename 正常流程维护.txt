@@ -14,6 +14,10 @@ That's what you are looking for and what you need to change to gradle-2.10-all.z
 
 Now you can run the build command, and there you go!
 
+> db.users.update({ "inviteid" : "18502005456", "userid" : "18756687776"}, {$set:{status:'1', money:4000, payAmount:100000, orderid:'2320170801172356232356', pid:{ "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "陆家嘴比特币一号【四期】", "pid" : "s20170003" }}})
+WriteResult({ "nMatched" : 0, "nUpserted" : 0, "nModified" : 0 })
+> db.invites.update({ "inviteid" : "18502005456", "userid" : "18756687776"}, {$set:{status:'1', money:4000, payAmount:100000, orderid:'2320170801172356232356', pid:{ "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "陆家嘴比特币一号【四期】", "pid" : "s20170003" }}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 
 
 
@@ -78,7 +82,14 @@ db.users.update({"_id":ObjectId('58f1c351422a2d1b6e91ca99')}, {$set:{"password" 
 321321199009305519", "roletye" : "0", "mobStatus" : "0", "userStatus" : "1", "is_admin" : false, "zhifuPay" : "", "zijinPay" : "", "remoteip" : "", "otherTel"
 : "", "address" : "", "mailSec" : false, "email" : "“, "header": "", "__v" : 0, "weixin" : "", "qq" : "", "updated" : ISODate("2017-04-26T11:10:01.068Z") }
 
+insert
 
+{ "outtrade" : "20170901001", "tradeno" : "20170901002", "payAmount" : 10000, "pid" : { "join" : 10000, "week" : 365, "shouyi" : "请关注QQ群", "name" : "ICO基金", "pid" : "ico001" }, "orderid" : "20170901003", "userid" : "599f98d3a413ed69e7a7041d", "status" : "1", "updated" : new , "created" : new Date(), "openStatus" : "1", "openAmount" : 0, "opendate" : new Date()}
+
+db.orders.insert({ "outtrade" : "20170901001", "tradeno" : "20170901002", "payAmount" : 10000, "pid" : { "join" : 10000, "week" : 365, "shouyi" : "请关注QQ群", "name" : "ICO基金", "pid" : "ico001" }, "orderid" : "20170901003", "userid" : "599f98d3a413ed69e7a7041d", "status" : "1", "updated" : new Date(), "created" : new Date(), "openStatus" : "1", "openAmount" : 0, "opendate" : new Date()})
+
+
+比特币妹妹 您好，张爱芳13505315833往陈总招行卡打款1万元，购买1万元ico基金，烦请查收后给处理一下，谢谢您。
 
 
 https://www.cyberciti.biz/faq/linux-unix-nginx-access-control-howto/ 黑名单
