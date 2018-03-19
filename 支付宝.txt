@@ -23,3 +23,5 @@ https://github.com/gwuhaolin/direct-alipay
 担保去掉
 
 封闭期限
+
+{$set:{"account" : { "payAccount" : "中国建设银行 6222801434101006761", "payname" : "银行账号", "name" : "郭超" }}}

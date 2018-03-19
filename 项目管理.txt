@@ -1,3 +1,9 @@
+cd /usr/share/redmine && nohup ruby bin/rails server webrick –e production &
+
+nohup ruby bin/rails server webrick –e production &
+
+
+
 1. 需求下来， 需要相关人员进行需求评审，验证需求的完整性。
 
 2. 技术评审， 测试评审， UI评审。

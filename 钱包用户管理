@@ -1,0 +1,107 @@
+z2017111214433540	未成功	13357770826	周国东	-10000	支付宝账号:13357770826	
+确认
+z2017111214440686	未成功	13357770826	周国东	-10000	支付宝账号:13357770826	
+确认
+z2017111308593603	未成功	13567637236	叶京云	
+\\\
+
+
+
+18717017076 已经打款, 用户已经清零
+
+
+13567637236 已经打款，用户已经清零
+
+
+15052284568 已经打款，用户已经清零
+
+
+> db.users.find({username:'18717017076'})
+{ "_id" : ObjectId("5996fe76c77cd92dca3fcded"), "password" : "477c72e9d8631e440bbbcc52c36e3d57", "username" : "18717017076", "created" : ISODate("2017-08-18T14:49:26.834Z"), "updated" : ISODate("2017-09-12T04:07:22.597Z"), "bankcount" : "", "bankcode" : "", "name" : "游松", "idcard" : "500102198803035999", "roletype" : "0", "mobStatus" : "0", "userStatus" : "2", "is_admin" : false, "zhifuPay" : "18717017076", "zijinPay" : "", "remoteip" : [ "127.0.0.1" ], "otherTel" : "", "address" : "", "mailSec" : false, "email" : "908408599@qq.com", "weixin" : "18717017076", "qq" : "908408599", "header" : "", "__v" : 0, "qianbao" : 7700 }
+> 
+> db.users.find({username:'18717017076'},{qianbao:1})
+{ "_id" : ObjectId("5996fe76c77cd92dca3fcded"), "qianbao" : 7700 }
+> 
+> db.users.update({username:'18717017076'}, {$set:{qianbao:0}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> 
+> db.users.find({username:'18717017076'},{qianbao:1})
+{ "_id" : ObjectId("5996fe76c77cd92dca3fcded"), "qianbao" : 0 }
+> 
+> cls
+
+> db.users.update({username:'13567637236'}, {$set:{qianbao:0}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+> 
+> db.balances.find({type:'3'})
+{ "_id" : ObjectId("5a058c9959e27b77ee1da953"), "countn" : 7700, "payAmount" : 7700, "type" : "3", "orderid" : "59920171030125209", "account" : null, "username" : "18717017076", "userid" : "5996fe76c77cd92dca3fcded", "created" : ISODate("2017-11-10T11:25:13.715Z"), "updated" : ISODate("2017-11-10T11:25:13.745Z"), "status" : "1", "tradeno" : "", "content" : "赎回到账", "__v" : 0 }
+{ "_id" : ObjectId("5a058cc759e27b77ee1da954"), "countn" : 11290, "payAmount" : 11290, "type" : "3", "orderid" : "59c20171109001313", "account" : null, "username" : "15052284568", "userid" : "59c34ad0c27f0c7a29f1746a", "created" : ISODate("2017-11-10T11:25:59.337Z"), "updated" : ISODate("2017-11-10T11:25:59.347Z"), "status" : "1", "tradeno" : "", "content" : "赎回到账", "__v" : 0 }
+{ "_id" : ObjectId("5a058cf159e27b77ee1da955"), "countn" : 1148, "payAmount" : 1148, "type" : "3", "orderid" : "1420170514151443141443", "account" : null, "username" : "13567637236", "userid" : "58f1c351422a2d1b6e91ca99", "created" : ISODate("2017-11-10T11:26:41.168Z"), "updated" : ISODate("2017-11-10T11:26:41.176Z"), "status" : "1", "tradeno" : "", "content" : "赎回到账", "__v" : 0 }
+> 
+> db.balances.remove({type:'3'})
+WriteResult({ "nRemoved" : 3 })
+> 
+> db.balances.find({username:'18717017076'})
+> 
+> db.users.find({username:'18717017076'},{qianbao:1})
+{ "_id" : ObjectId("5996fe76c77cd92dca3fcded"), "qianbao" : 0 }
+> 
+> 
+> db.balances.find({username:'13567637236'})
+{ "_id" : ObjectId("5a08ee788f4ef22eca837feb"), "countn" : -1000, "payAmount" : 1000, "type" : "2", "orderid" : "z2017111308593603", "account" : { "payAccount" : "261520804@qq.com", "payname" : "支付宝账号", "name" : "叶京云" }, "username" : "13567637236", "userid" : "58f1c351422a2d1b6e91ca99", "created" : ISODate("2017-11-13T00:59:36.036Z"), "updated" : ISODate("2017-11-13T00:59:36.036Z"), "status" : "0", "tradeno" : "", "content" : "提现服务", "__v" : 0 }
+> 
+> db.users.find({username:'13567637236'})
+{ "_id" : ObjectId("58f1c351422a2d1b6e91ca99"), "userStatus" : "2", "password" : "f9726de9aa89125aedf18011ee702999", "username" : "13567637236", "created" : ISODate("2017-04-06T04:55:50.305Z"), "bankcount" : "", "bankcode" : "", "name" : "叶京云", "roletye" : "0", "mobStatus" : "0", "is_admin" : false, "zhifuPay" : "261520804@qq.com", "zijinPay" : "", "remoteip" : "", "otherTel" : "", "address" : "", "mailSec" : false, "email" : "261520804@qq.com", "header" : "", "__v" : 0, "weixin" : "13567637236", "qq" : "261520804", "updated" : ISODate("2017-06-07T07:35:54.679Z"), "idcard" : "332522198910230017", "qianbao" : 0 }
+> 
+> 
+> 
+> db.balances.insert({ "_id" : ObjectId("5a058c9959e27b77ee1da953"), "countn" : 7700, "payAmount" : 7700, "type" : "3", "orderid" : "59920171030125209", "account" : null, "username" : "18717017076", "userid" : "5996fe76c77cd92dca3fcded", "created" : ISODate("2017-11-10T11:25:13.715Z"), "updated" : ISODate("2017-11-10T11:25:13.745Z"), "status" : "1", "tradeno" : "", "content" : "赎回到账", "__v" : 0 })
+WriteResult({ "nInserted" : 1 })
+> 
+> db.balances.insert({ "_id" : ObjectId("5a058cc759e27b77ee1da954"), "countn" : 11290, "payAmount" : 11290, "type" : "3", "orderid" : "59c20171109001313", "account" : null, "username" : "15052284568", "userid" : "59c34ad0c27f0c7a29f1746a", "created" : ISODate("2017-11-10T11:25:59.337Z"), "updated" : ISODate("2017-11-10T11:25:59.347Z"), "status" : "1", "tradeno" : "", "content" : "赎回到账", "__v" : 0 })
+
+WriteResult({ "nInserted" : 1 })
+> 
+> db.balances.insert({ "_id" : ObjectId("5a058cf159e27b77ee1da955"), "countn" : 1148, "payAmount" : 1148, "type" : "3", "orderid" : "1420170514151443141443", "account" : null, "username" : "13567637236", "userid" : "58f1c351422a2d1b6e91ca99", "created" : ISODate("2017-11-10T11:26:41.168Z"), "updated" : ISODate("2017-11-10T11:26:41.176Z"), "status" : "1", "tradeno" : "", "content" : "赎回到账", "__v" : 0 })
+WriteResult({ "nInserted" : 1 })
+> 
+> db.users.find({username:'18717017076'},{qianbao:1})
+{ "_id" : ObjectId("5996fe76c77cd92dca3fcded"), "qianbao" : 0 }
+> 
+> db.users.find({username:'13567637236'},{qianbao:1})
+{ "_id" : ObjectId("58f1c351422a2d1b6e91ca99"), "qianbao" : 0 }
+> 
+> db.users.find({username:'15052284568'},{qianbao:1})
+{ "_id" : ObjectId("59c34ad0c27f0c7a29f1746a"), "qianbao" : 11290 }
+> 
+> db.users.update({username:'15052284568'}, {$set:{qianbao:0}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> 
+> db.users.find({username:'13909158515'},{qianbao:1})
+{ "_id" : ObjectId("59c33724c27f0c7a29f1743e") }
+> 
+> 
+> 
+> 
+> db.balances.find({orderid:'z2017111308593603'})
+{ "_id" : ObjectId("5a08ee788f4ef22eca837feb"), "countn" : -1000, "payAmount" : 1000, "type" : "2", "orderid" : "z2017111308593603", "account" : { "payAccount" : "261520804@qq.com", "payname" : "支付宝账号", "name" : "叶京云" }, "username" : "13567637236", "userid" : "58f1c351422a2d1b6e91ca99", "created" : ISODate("2017-11-13T00:59:36.036Z"), "updated" : ISODate("2017-11-13T00:59:36.036Z"), "status" : "0", "tradeno" : "", "content" : "提现服务", "__v" : 0 }
+> 
+> db.balances.update({orderid:'z2017111308593603'}, {$set:{status:'1'}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> 
+> db.balances.find({username:'13357770826'})
+{ "_id" : ObjectId("5a06ca5f8f4ef22eca837f7d"), "countn" : 10000, "payAmount" : 10000, "type" : "1", "orderid" : "z2017111118010386", "account" : null, "username" : "13357770826", "userid" : "59f1c52252d9ad70d876a9f5", "created" : ISODate("2017-11-11T10:01:03.865Z"), "updated" : ISODate("2017-11-11T10:01:03.865Z"), "status" : "0", "tradeno" : "", "content" : "充值服务", "__v" : 0 }
+{ "_id" : ObjectId("5a06ca648f4ef22eca837f7e"), "countn" : 10000, "payAmount" : 10000, "type" : "1", "orderid" : "z2017111118010838", "account" : null, "username" : "13357770826", "userid" : "59f1c52252d9ad70d876a9f5", "created" : ISODate("2017-11-11T10:01:08.383Z"), "updated" : ISODate("2017-11-11T10:01:08.383Z"), "status" : "0", "tradeno" : "", "content" : "充值服务", "__v" : 0 }
+{ "_id" : ObjectId("5a06ca648f4ef22eca837f7f"), "countn" : 10000, "payAmount" : 10000, "type" : "1", "orderid" : "z2017111118010899", "account" : null, "username" : "13357770826", "userid" : "59f1c52252d9ad70d876a9f5", "created" : ISODate("2017-11-11T10:01:08.994Z"), "updated" : ISODate("2017-11-11T10:01:08.994Z"), "status" : "0", "tradeno" : "", "content" : "充值服务", "__v" : 0 }
+{ "_id" : ObjectId("5a06ca688f4ef22eca837f80"), "countn" : 10000, "payAmount" : 10000, "type" : "1", "orderid" : "z2017111118011243", "account" : null, "username" : "13357770826", "userid" : "59f1c52252d9ad70d876a9f5", "created" : ISODate("2017-11-11T10:01:12.434Z"), "updated" : ISODate("2017-11-11T10:01:12.434Z"), "status" : "0", "tradeno" : "", "content" : "充值服务", "__v" : 0 }
+{ "_id" : ObjectId("5a06ca708f4ef22eca837f81"), "countn" : 10000, "payAmount" : 10000, "type" : "1", "orderid" : "z2017111118012000", "account" : null, "username" : "13357770826", "userid" : "59f1c52252d9ad70d876a9f5", "created" : ISODate("2017-11-11T10:01:20.003Z"), "updated" : ISODate("2017-11-11T10:01:20.003Z"), "status" : "0", "tradeno" : "", "content" : "充值服务", "__v" : 0 }
+{ "_id" : ObjectId("5a06ca978f4ef22eca837f82"), "countn" : 10000, "payAmount" : 10000, "type" : "1", "orderid" : "z2017111118015960", "account" : null, "username" : "13357770826", "userid" : "59f1c52252d9ad70d876a9f5", "created" : ISODate("2017-11-11T10:01:59.607Z"), "updated" : ISODate("2017-11-11T10:01:59.607Z"), "status" : "0", "tradeno" : "", "content" : "充值服务", "__v" : 0 }
+{ "_id" : ObjectId("5a06ca998f4ef22eca837f83"), "countn" : 10000, "payAmount" : 10000, "type" : "1", "orderid" : "z2017111118020122", "account" : null, "username" : "13357770826", "userid" : "59f1c52252d9ad70d876a9f5", "created" : ISODate("2017-11-11T10:02:01.227Z"), "updated" : ISODate("2017-11-11T10:04:36.392Z"), "status" : "1", "tradeno" : "", "content" : "充值服务", "__v" : 0 }
+{ "_id" : ObjectId("5a07ed978f4ef22eca837fb0"), "countn" : -10000, "payAmount" : 10000, "type" : "2", "orderid" : "z2017111214433540", "account" : { "payAccount" : "13357770826", "payname" : "支付宝账号", "name" : "周国东" }, "username" : "13357770826", "userid" : "59f1c52252d9ad70d876a9f5", "created" : ISODate("2017-11-12T06:43:35.412Z"), "updated" : ISODate("2017-11-12T06:43:35.412Z"), "status" : "0", "tradeno" : "", "content" : "提现服务", "__v" : 0 }
+{ "_id" : ObjectId("5a07edb68f4ef22eca837fb1"), "countn" : -10000, "payAmount" : 10000, "type" : "2", "orderid" : "z2017111214440686", "account" : { "payAccount" : "13357770826", "payname" : "支付宝账号", "name" : "周国东" }, "username" : "13357770826", "userid" : "59f1c52252d9ad70d876a9f5", "created" : ISODate("2017-11-12T06:44:06.869Z"), "updated" : ISODate("2017-11-12T06:44:06.869Z"), "status" : "0", "tradeno" : "", "content" : "提现服务", "__v" : 0 }
+> 
+> 
+> 
+> db.users.find({username:'13357770826'})
+{ "_id" : ObjectId("59f1c52252d9ad70d876a9f5"), "password" : "f569c4d8986d38f293e6e2b89cefc98c", "username" : "13357770826", "created" : ISODate("2017-10-26T11:21:06.430Z"), "updated" : ISODate("2017-10-27T22:47:42.343Z"), "bankcount" : "", "bankcode" : "", "name" : "周国东", "idcard" : "321119197311075716", "roletype" : "0", "mobStatus" : "0", "userStatus" : "2", "is_admin" : false, "zhifuPay" : "13357770826", "zijinPay" : "", "remoteip" : [ "117.90.41.219" ], "otherTel" : "", "address" : "", "mailSec" : false, "email" : "13357770826@163.com", "weixin" : "13357770826", "qq" : "1599242865", "header" : "", "__v" : 0, "qianbao" : 10000 }
