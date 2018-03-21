@@ -81,6 +81,8 @@ mongodump -h 127.0.0.1:27017 -d btb -o F:/producation_mongod_dak/data/btb
 
 mongorestore -h 127.0.0.1:27017 -d btb F:/producation_mongod_dak/data/btb
 
+mongorestore -h 127.0.0.1:27017 -d btb F:/aws/data/btb
+
 mongodb
 http://www.runoob.com/mongodb/mongodb-update.html
 
