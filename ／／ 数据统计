@@ -1,0 +1,15 @@
+／／ 数据统计
+db.orders.aggregate([{$match:{openStatus:'0',"created":{ "$gte":new Date("2017-03-01"),"$lte":new Date("2017-04-01")}}}, {$group : {_id : "$status", num_tutorial : {$sum : "$payAmount"}}}])
+
+
+／／
+db.superorders.aggregate([{$match:{status:'1'}}, {$group : {_id : "$type", num_tutorial : {$sum : "$payAmount"}}}])
+
+／／
+db.orders.aggregate([{$match:{openStatus:'0', status:{"$gt":'0'}, "created":{ "$gte":new Date("2017-03-01"),"$lte":new Date("2017-04-01")}}}, {$group : {_id : "$pid", num_tutorial : {$sum : "$payAmount"}}}])
+
+db.orders.aggregate([{$match:{openStatus:'0', status:{"$gt":'0'}, "created":{ "$gte":new Date("2017-10-01"),"$lte":new Date("2017-11-01")}}}, {$group : {_id : "$pid", num_tutorial : {$sum : "$payAmount"}}}])
+
+
+／／ 数据统计
+db.orders.aggregate([{$match:{openStatus:'1'}}, {$group : {_id : "$status", num_tutorial : {$sum : "$payAmount"}}}])

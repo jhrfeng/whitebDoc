@@ -1,4 +1,60 @@
+{"payAmount" : 5000, "pid" : { "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "陆家嘴比特币一号【五期】", "pid" : "s20170004" }, "orderid" : "2720170901092738272743", "userid" : "599a4834c77cd92dca3fcfd0", "status" : "1", "updated" : ISODate("2017-09-01T01:27:40.332Z"), "created" : ISODate("2017-09-01T01:28:48.208Z"), "started" : ISODate("2017-09-01T00:00:00Z"), "type" : "5", "openStatus" : "0", "openAmount" : 0, "__v" : 0, remark:'g' }
+
+
+{"payAmount" : 50000, "pid" : { "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "陆家嘴比特币一号【四期】", "pid" : "s20170003" }, "orderid" : "5020170801095001505002", "userid" : "599a4834c77cd92dca3fcfd0", "status" : "1", "updated" : ISODate("2017-08-01T01:50:13.529Z"), "created" : ISODate("2017-08-01T01:50:53.638Z"), "started" : ISODate("2017-08-01T00:00:00Z"), "type" : "4", "openStatus" : "0", "openAmount" : 0, "__v" : 0, remark:'g' }
+
+
+
+
+
+
+
 100289300092   苹果案例编号
+
+{ "_id" : ObjectId("59f207c8fee8df57bde52ef2"), "key" : "20171027", "price" : 39376 }
+{ "_id" : ObjectId("59f207d6fee8df57bde52ef3"), "key" : "20171026", "price" : 39376 }
+{ "_id" : ObjectId("59f42af0d1e42a67ccaa7369"), "price" : 38624, "key" : "20171028" }
+{ "_id" : ObjectId("59f57c70d1e42a67ccaa7392"), "price" : 38510, "key" : "20171029" }
+{ "_id" : ObjectId("59f6cdf08d9652439da2ca5b"), "price" : 40753, "key" : "20171030" }
+{ "_id" : ObjectId("59f81f70943196110b77c167"), "price" : 40657, "key" : "20171031" }
+{ "_id" : ObjectId("59f970f0aacabb71f334bf37"), "price" : 42492, "key" : "20171101" }
+{ "_id" : ObjectId("59fac270c7f14b3cda505b71"), "price" : 46194, "key" : "20171102" }
+
+{ "user" : {"name" : "吴晓雷", "username" : "15958026870", "id" : "594d28439503ae05bad8aef1" }, "updateid" : "594d28439503ae05bad8aef1", "openAmount" : "6000", "payAmount" : "6000", "product" : "比特币套利基金一年", "orderid" : "4720170712224751474751", "userid" : "594d28439503ae05bad8aef1", "account" : "15958026870", "status" : "0", "updated" : ISODate("2017-09-28T04:23:16.578Z"), "created" : ISODate("2017-09-24T13:16:39.540Z"), "openStatus" : "0", "tradeno" : "", "companyAccount" : "2876073312@qq.com", "paytype" : "1", "__v" : 0,remark:'提前赎回'}
+
+
+{ "inviteid" : "18817580879", "userid" : "18817580879", "created" : ISODate("2017-09-30T13:24:52.503Z"), "updated" : ISODate("2017-11-08T01:40:27.466Z"), "status" : "1", "money" : 21600, "payAmount" : 540000, "tradeno" : "", "orderid" : "3820171108163814383814", "type" : "0", "zhifuPay" : "", "remark" : "银行转账", "pid" : { "name" : "比特币套利基金全年" } }
+
+db.backorders.find({orderid:'2620171017142621262623'})
+{ "user" : { "username" : "13505315833", "name" : "张爱芳" }, "updateid" : "56064f89ade2f21f36b03136", "account" : "13505315833", "openAmount" : "1300", "payAmount" : "10000", "product" : "陆家嘴比特币一号【四期】", "orderid" : "2620171017142621262623_二次挂单多收1300", "userid" : "599f98d3a413ed69e7a7041d", "status" : "0", "updated" : ISODate("2017-11-08T01:30:38.484Z"), "created" : ISODate("2017-11-07T03:27:18.811Z"), "openStatus" : "0", "tradeno" : "", "companyAccount" : "2876073312@qq.com", "paytype" : "2", "__v" : 0}
+
+
+{"costAmount" : 328000, "orderid" : "59a20171107174109", "payAmount" : 180000, "pid" : { "join" : 100, "week" : 365, "shouyi" : "浮动收益", "name" : "陆家嘴比特币一号", "pid" : "s20170000" }, "userid" : "59a8de3f9202277fe1e67e17", "status" : "1", "updated" : ISODate("2017-11-07T07:46:28.075Z"), "created" : ISODate("2017-07-04T04:21:56.693Z"), "started" : ISODate("2017-07-01T00:00:00Z"), "type" : "1", "openStatus" : "1", "openAmount" : 0, "putstatus" : "0", "__v" : 0 , remark:'银行转账'}
+
+
+db.superorders.update({orderid:'3820170504233828383831'}, {$set:{status:'7'}})
+
+
+{"payAmount" : 5000, "pid" : { "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "陆家嘴比特币一号【三期】", "pid" : "s20170002" }, "orderid" : "1720170701091707171707", "userid" : "5922cbc4389d1e0966f1141e", "status" : "0", "updated" : ISODate("2017-07-01T01:17:07.292Z"), "created" : ISODate("2017-07-01T01:17:07.292Z"), "started" : ISODate("2017-07-01T00:00:00Z"), "type" : "3", "openStatus" : "0", "openAmount" : 0, "__v" : 0, remark:'' }
+
+
+{"user" : { "username" : "13926995329", "name" : "刘云飞" }, "updateid" : "56064f89ade2f21f36b03136", "account" : "13926995329", "openAmount" : "400", "payAmount" : "8000", "product" : "陆家嘴比特币一号【三期】", "orderid" : "59320171020033214_多扣本金400", "userid" : "593e0f612880ea341e7b7650", "status" : "0", "updated" : ISODate("2017-11-06T02:44:41.757Z"), "created" : ISODate("2017-11-04T01:36:52.536Z"), "openStatus" : "0", "tradeno" : "", "companyAccount" : "2876073312@qq.com", "paytype" : "2", "__v" : 0, "findate" : ISODate("2017-11-06T02:44:41.757Z") }
+
+
+59991fa7c77cd92dca3fcee9
+
+{"payAmount" : 8000, "pid" : { "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "BTC指数基金", "pid" : "b20170000" }, "orderid" : "2820171027142816", "userid" : "59991fa7c77cd92dca3fcee9", "status" : "1", "updated" : ISODate("2017-10-27T07:30:00.006Z"), "created" : ISODate("2017-10-27T06:28:33.623Z"), "type" : "1", "openStatus" : "0", "openAmount" : 39376, "putstatus" : "0", "flag" : "1", "fen" : 0.2028, "__v" : 0, "key" : "20171027", remark:'g'}
+
+
+db.btcorders.update({"orderid":"2820171027142814"},{"$set":{payAmount:8000}})
+
+
+{"payAmount" : 180000, "pid" : { "join" : 100, "week" : 365, "shouyi" : "浮动收益", "name" : "陆家嘴比特币一号", "pid" : "s20170000" }, "orderid" : "3820170504233828383831", "userid" : "599a4834c77cd92dca3fcfd0", "status" : "1", "updated" : ISODate("2017-11-01T10:26:30.003Z"), "created" : ISODate("2017-05-04T15:39:28.150Z"), "openStatus" : "0", "openAmount" : 0, "__v" : 0, "remark" : "g", "putAmount" : 0, "putstatus" : "0", "putuserid" : "", "putuser" : {  } }
+
+
+{"payAmount" : 20000, "pid" : { "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "BTC指数基金", "pid" : "b20170000" }, "orderid" : "2820171027142808", "userid" : "599a4834c77cd92dca3fcfd0", "status" : "1", "updated" : ISODate("2017-10-27T07:30:00.006Z"), "created" : ISODate("2017-10-27T06:28:33.623Z"), "type" : "1", "openStatus" : "0", "openAmount" : 0, "putstatus" : "0", "flag" : "1", "fen" : 0.5069, "__v" : 0, "key" : "20171027", remark:'g'}
+
+
 
 
 
@@ -22,6 +78,27 @@ Now you can run the build command, and there you go!
 WriteResult({ "nMatched" : 0, "nUpserted" : 0, "nModified" : 0 })
 > db.invites.update({ "inviteid" : "18502005456", "userid" : "18756687776"}, {$set:{status:'1', money:4000, payAmount:100000, orderid:'2320170801172356232356', pid:{ "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "陆家嘴比特币一号【四期】", "pid" : "s20170003" }}})
 WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+{"payAmount" : 4000, "pid" : { "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "马六甲比特币一号【六期】", "pid" : "s20170005" }, "orderid" : "1720171003091716171715", "userid" : "5905fc681271450b302158ea", "status" : "1", "updated" : ISODate("2017-10-03T09:17:19.175Z"), "created" : ISODate("2017-10-03T09:17:38.183Z"), "started" : ISODate("2017-10-01T00:00:00Z"), "type" : "6", "openStatus" : "0", "openAmount" : 0, "__v" : 0, remark:'手动添加4000'}
+
+
+
+
+{"payAmount" : 9000, "pid" : { "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "陆家嘴比特币一号【四期】", "pid" : "s20170003" }, "orderid" : "2620170801142621262629", "userid" : "599a4834c77cd92dca3fcfd0", "status" : "1", "updated" : ISODate("2017-10-18T08:59:48.072Z"), "created" : ISODate("2017-08-01T06:27:11.630Z"), "started" : ISODate("2017-08-01T00:00:00Z"), "type" : "4", "openStatus" : "0", "openAmount" : 0, "__v" : 0, "remark" : "g"}
+
+
+
+{"payAmount" : 8000, "pid" : { "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "陆家嘴比特币一号【三期】", "pid" : "s20170002" }, "orderid" : "1620170701091611161624", "userid" : "599a4834c77cd92dca3fcfd0", "status" : "1", "updated" : ISODate("2017-10-25T02:51:05.011Z"), "created" : ISODate("2017-07-01T01:19:05.080Z"), "started" : ISODate("2017-07-01T00:00:00Z"), "type" : "3", "openStatus" : "0", "openAmount" : 0, "remark" : "g", "__v" : 0}
+
+
+{"payAmount" : 12000, "pid" : { "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "陆家嘴比特币一号【二期】", "pid" : "s20170001" }, "orderid" : "4120170601104155414165", "userid" : "599a4834c77cd92dca3fcfd0", "status" : "1", "updated" : ISODate("2017-10-24T03:37:05.028Z"), "created" : ISODate("2017-06-01T02:42:28Z"), "started" : ISODate("2017-06-01T00:00:00Z"), "type" : "2", "openStatus" : "0", "openAmount" : 0, "__v" : 0, "remark" : "g", "putAmount" : 34000, "putstatus" : "0"}
+
+
+
+
+{"payAmount" : 20000, "pid" : { "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "陆家嘴比特币一号【三期】", "pid" : "s20170002" }, "orderid" : "1620170701091611161616", "userid" : "599a4834c77cd92dca3fcfd0", "status" : "1", "updated" : ISODate("2017-10-25T02:51:05.011Z"), "created" : ISODate("2017-07-01T01:19:05.080Z"), "started" : ISODate("2017-07-01T00:00:00Z"), "type" : "3", "openStatus" : "0", "openAmount" : 0, "remark" : "g", "__v" : 0}
+
+
 
 
 59466b08a0cd6727ef7c30dc  18672801056
@@ -75,7 +152,7 @@ mongodump -h 127.0.0.1:27017 -d btb -o /home/producation_mongod_dak/data
 systemctl status mongod
 
 // 恢复数据
-mongorestore -h 127.0.0.1:27017 -d bgn F:/script/data/data/bgn
+mongorestore -h 127.0.0.1:27017 -d btb /Users/mac/home/mongo/data2/btb
 
 mongodump -h 127.0.0.1:27017 -d btb -o F:/producation_mongod_dak/data/btb
 
@@ -129,4 +206,44 @@ https://www.cyberciti.biz/faq/linux-unix-nginx-access-control-howto/ 黑名单
 db.logs.find({'created':{'$gte':new Date("2017-05-01"), '$lt':new Date("2017-05-03")}}).count()
 
 db.users.update({username:"13934645894"}, {$set:{'zhifuPay':'DLHB5622226@126.com'}})
+
+// 赎回统计
+db.orders.aggregate([{$match:{opendate:{$gt: new Date('2017-11-30')}, opendate:{$lt: new Date('2017-12-31')}}},{$group : {_id : "$status", num_tutorial : {$sum : "$payAmount"}}}])
+
+// 更新统计
+db.balances.aggregate([{$match:{username:'13357770826', status:'1'}}, {"$group":{_id: '$userid',max_value:{"$sum":"$countn"}}}]);
+
+// 统计所有套利订单
+db.orders.aggregate([{$match:{openStatus:'0'}}, {$group : {_id : "$status", num_tutorial : {$sum : "$payAmount"}}}])
+
+// 按月份统计
+db.orders.aggregate([{$match:{openStatus:'0',created:{$gt: new Date('2017-10-01')}, created:{$lt: new Date('2017-11-01')}}}, {$group : {_id : "$status", num_tutorial : {$sum : "$payAmount"}}}])
+
+
+{$match:{openStatus:0}}
+// 用户统计
+db.users.count({"created":{ "$gte":new Date("2017-10-01"),"$lte":new Date("2017-11-01")}})
+
+db.orders.aggregate([{$match:{openStatus:'0',"created":{ "$gte":new Date("2017-10-01"),"$lte":new Date("2017-11-01")}}}, {$group : {_id : "$status", num_tutorial : {$sum : "$payAmount"}}}])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"created":{ "$gte":new Date("2017-09-30"),"$lte":new Date("2017-11-01")}}
+
+{'created':{'$gte':new Date("2017-04-01"), '$lt':new Date("2017-05-01")}}
+
+
+
 
