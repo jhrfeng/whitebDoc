@@ -1,1 +1,0 @@
-select * from SFSS_INSURE_UPLOAD_SUPPLEMENT for update

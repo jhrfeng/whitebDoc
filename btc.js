@@ -1,4 +1,0 @@
-{"orderid" : "59120171129105930", "payAmount" : 5000, "costAmount" : 5750, "pid" : { "pid" : "b20170000", "name" : "BTC指数基金", "shouyi" : "浮动收益", "week" : 365, "join" : 5000 }, "userid" : "59126221320f5f547adb57e3", "key" : "20171027", "status" : "1", "updated" : ISODate("2017-11-29T02:59:30.995Z"), "created" : ISODate("2017-10-27T06:28:33.623Z"), "type" : "1", "openStatus" : "0", "openAmount" : 0, "putstatus" : "0", "flag" : "1", "fen" : 0.1267, "__v" : 0 }
-
-
-{"payAmount" : 8000, "pid" : { "join" : 5000, "week" : 365, "shouyi" : "浮动收益", "name" : "BTC指数基金", "pid" : "b20170000" }, "orderid" : "59120171129105930", "userid" : "59126221320f5f547adb57e3", "status" : "1", "updated" : ISODate("2017-11-29T05:29:30.005Z"), "created" : ISODate("2017-10-27T06:28:33.623Z"), "type" : "1", "openStatus" : "0", "openAmount" : 39376, "putstatus" : "0", "flag" : "1", "fen" : 0.2028, "__v" : 0, "key" : "20171027", "remark" : "g", "costAmount" : 9000, remark:'已支付未生成'}
